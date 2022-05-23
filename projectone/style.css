@@ -15,7 +15,7 @@
     border-radius: .9rem;
     width: 8vh;
     position: relative;
-    transition: all 250ms ease-in-out;
+    transition: all 350ms ease-in-out;
     cursor: pointer;
     height: 70vh;
     background-size: cover;
