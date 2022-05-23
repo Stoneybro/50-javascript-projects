@@ -12,26 +12,29 @@
     gap: .7rem;
 }
 .image{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
     border-radius: .9rem;
     width: 8vh;
     position: relative;
     transition: all 250ms ease-in-out;
     cursor: pointer;
+    height: 70vh;
+    background-size: cover;
+    background-position: center center;
 }
+
 .image.active{
-    width: 60vh;
+    width: 100vh;
 }
 h3{
     opacity: 0;
     position: absolute;
     transition: all 250ms ease-in-out 250ms;
     bottom: 0;
-    left: 0;
+    left: 10px;
+    color: rgb(78, 85, 122);
+    font-family:'cursive' ;
 }
-h3.active{
+.active h3{
     opacity: 1;
+    
 }
