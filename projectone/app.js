@@ -8,7 +8,7 @@ images.forEach(pics => {
         tap.classList.toggle("active")
     })
 });
-function removepic(params) {
+function removepic() {
     images.forEach(pics => {
         pics.classList.remove("active")
     });
