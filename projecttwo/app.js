@@ -4,17 +4,19 @@ const prev=document.querySelector("#prev")
 const progress=document.querySelector(".container::after")
 let count=1
 
-if (count>num.length) {
-    count=num.length
-}else if (count<1) {
-    count=1
-}
+
 next.addEventListener("click",()=>{
     count++
+    if (count>num.length) {
+        count=num.length
+    }
     update()
 })
 prev.addEventListener("click",()=>{
     count--
+    if (count<1) {
+        count=1
+    }
     update()
 })
 function update() {
@@ -23,6 +25,14 @@ function update() {
             numbers.classList.add("active")
         }else{numbers.classList.remove("active")}
     })
- const active=document.querySelectorAll(".active")
-    progress.style.width="100px"
+    console.log(count);
+    if (count===1) {
+        prev.disabled=true
+    }else if (count===num.length) {
+        next.disabled=true
+        prev.disabled=false
+    }else{
+        next.disabled=false
+        next.disabled=false
+    }
 }
