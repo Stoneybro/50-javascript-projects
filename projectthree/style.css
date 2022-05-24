@@ -1,0 +1,78 @@
+:root{
+    box-sizing: border-box;
+}
+*,::after,::before{
+    box-sizing: inherit;
+}
+body{
+    background-color: rgb(129, 97, 8);
+    margin: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.wrapper{
+    background-color: yellow;
+    height: 100vh;
+    padding: 1rem 10rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 500ms ease 50ms;
+    transform-origin: top left;
+}
+.wrapper.active{
+    transform: rotate(-20deg);
+    transform-origin: top left;
+}
+.btn{
+    position: absolute;
+    background-color: #f68910;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    left: -3rem;
+    top: -3rem;
+    z-index: 999;
+}
+.btn>button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    transition: all 200ms ease;
+    cursor: pointer;
+    transition: all 250ms ease;
+    transform:scale(1);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.btn>button:hover{
+    transform:scale(0.9) ;
+}
+.btn2{
+    display: none;
+}
+.active .btn2{
+    display: block;
+}
+.active .btn1{
+    display: none;
+}
+ ul{
+    z-index: -1;
+position: absolute;
+bottom: 0;
+padding-left: 20px;
+display: flex;
+flex-direction: column;
+color: white;
+font-size: 2rem;
+transition: transform 500ms ease-in-out 250ms;
+transform: translateX(-100%);
+}
+ ul.active{
+    transform: translateX(0);
+}
