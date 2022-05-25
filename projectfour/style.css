@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.wrapper{
+    background: url("/projectfour/Business\ background\ \ \ backgrounds\ \ \ Design\ Template\ \ \ 1585789.png") ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    filter: blur(1rem);
+   
+}
+.number{
+    position: absolute;
+    font-size: 4rem;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+
+} 
