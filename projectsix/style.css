@@ -1,0 +1,28 @@
+body{
+    box-sizing: border-box;
+    margin:5rem 0;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    gap: 3rem;
+
+}
+
+.content{
+    font-size: 3rem;
+    padding: 4rem;
+    border: 3px solid rgba(0, 0, 0, 0.61);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.466);
+    background-color: rgba(0, 0, 0, 0.116);
+    transform: translateX(400%);
+    transition: all 500ms ease;
+}
+body :nth-child(2n-1){
+    transform: translateX(-400%);
+}
+.content.show{
+    transform: translateX(0);
+}
