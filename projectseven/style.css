@@ -1,0 +1,75 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(84, 170, 159);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+p,button{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding:2rem;
+    gap: 20px;
+
+}
+.form-control{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    height: 2rem;
+}
+.form-control input{
+    width: 18rem;
+    outline: none;
+    background-color: transparent ;
+    border: 0;
+   border-bottom: 1px white solid;
+   color: white;
+}
+button{
+    height: 2rem;
+    background-color:lightblue;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+a{    color: lightblue;
+}
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+p{
+    margin-top: 10px;
+}
+.form-control label{
+    position: absolute;
+    top: 0;
+}
+label{
+    transition: all 500ms;
+}
+
+.form-control label span {
+    display:  inline-block;
+    min-width:  5px;
+    transition:  0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-12px);
+}

@@ -1,6 +1,6 @@
 const images=document.querySelectorAll(".image")
 
-
+console.log(images);
 images.forEach(pics => {
     pics.addEventListener("click",e=>{
         let tap=e.currentTarget
