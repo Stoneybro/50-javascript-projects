@@ -1,0 +1,70 @@
+:root{
+    font-size: calc(0.8em + 0.5vh);
+    box-sizing: border-box;
+    --background-color:rgb(51, 113, 184);
+    --bottle-color:rgb(19, 56, 136);
+}
+*,::after,::before{
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--background-color);
+    text-align: center;color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper{
+margin: 0 10rem;
+text-align: center;
+}
+.bigbottle{
+    background-color: var(--bottle-color);
+    width: 15rem;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    border-radius:0 0 2rem 2rem;
+    border: 1px solid white;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.midtext{
+    margin: 0.5rem 0;
+}
+.smallbottle{
+    background-color: var(--bottle-color);
+    border-radius:0 0 2rem 2rem;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.smallbottles{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+   width: max-content;
+   margin: 0 auto;
+}.smallbottles h3{
+    padding: 1rem;
+}
+.smallbottle.full{
+    background-color: rgb(132, 172, 209);
+}
+.flexbottle{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    flex-grow: 1;
+}
+.percentage{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(132, 172, 209);
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+    height: 0;
+}
