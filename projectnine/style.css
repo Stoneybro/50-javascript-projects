@@ -1,0 +1,60 @@
+:root{
+    font-size: calc(0.5vh + 0.8rem);
+    box-sizing: border-box;
+}
+*,::after,::before{
+    box-sizing: inherit;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstbox{
+    background-color: rgb(214, 205, 205);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 6rem;
+}
+input{
+    width: 30rem;
+    height: 2rem;
+}
+.submit>button{
+    margin-top: 2rem;
+    background-color: rgb(34, 103, 206);
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.output{
+    background-color:rgb(214, 205, 205) ;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    font-size: 1.5em ;
+}
+.visit{
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    background-color: beige;
+    cursor: pointer;
+}
+.delete{
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    background-color: rgb(211, 35, 35);
+    color: white;
+    cursor: pointer;
+}
