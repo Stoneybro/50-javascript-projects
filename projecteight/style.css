@@ -56,8 +56,13 @@ text-align: center;
 .flexbottle{
     display: flex;
     flex-direction: column;
-    height: 70%;
-    flex-grow: 1;
+
+}
+.flexbottle h2{
+    margin: 0;
+}
+.flexbottle h3{
+    margin: 0;
 }
 .percentage{
     display: flex;
@@ -65,6 +70,5 @@ text-align: center;
     background-color: rgb(132, 172, 209);
     margin: 0;
     width: 100%;
-    flex-grow: 1;
     height: 0;
 }
