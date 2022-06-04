@@ -20,8 +20,10 @@ keys.forEach((key,index)=>{
          question.textContent=""
        
      })
-     deleteno.addEventListener("click",()=>{
-
+     deleteno.addEventListener("click",(e)=>{
+        
+       let y= question.textContent
+       deletenos(y)
      })
 
    equals.addEventListener("click",()=>{
@@ -29,4 +31,7 @@ keys.forEach((key,index)=>{
    })
     
 })
+function deletenos(x) {
+    console.log( x.split("").slice(1,x.length));
+}
 
