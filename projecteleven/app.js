@@ -8,8 +8,8 @@ function filternames(params) {
     let filtervalue=filterinput.value.toUpperCase()
    li.forEach(a => {
        if (a.innerHTML.toUpperCase().indexOf(filtervalue)>-1) {
-           li.style.display=""
-       }else{li.style.display="none"}
+           a.parentElement.style.display=""
+       }else{a.parentElement.style.display="none"}
    });
 
 
