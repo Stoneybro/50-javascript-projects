@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\project 1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "50-javascript-projects",
+		"liveServer.settings.port": 5501
+	}
+}
