@@ -1,0 +1,9 @@
+          const statemap=states.map((state)=>{
+            return`<div class="boxes">
+        <h2>${state[0]}</h2>
+        <h2>${state[1].name}</h2>
+        <h3>${state[1].capital}</h3>
+        <span><h4>${state[1].long}</h4>
+        <h4>${state[0].lat}</h4></span>
+    </div>`
+     box.innerHTML=statemap

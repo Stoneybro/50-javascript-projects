@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+input{
+    width: 15rem;
+    height: 1.5rem;
+    background-color: rgb(49, 48, 48);
+    border: black 1px solid;
+    outline: none;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+.box{
+    margin-top: 3rem;
+}
+.boxes{
+    margin: 0.5rem 0;
+    background-color:rgb(49, 48, 48) ;
+    width: 25rem;
+    padding: 1rem;
+    text-align: left;
+}
+span{
+    display: flex;
+    justify-content: space-around;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
