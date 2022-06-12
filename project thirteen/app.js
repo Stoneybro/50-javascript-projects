@@ -6,14 +6,20 @@ input.addEventListener("input",()=>{
     fetch("state-capitals.json")
     .then(response=>response.json())
     .then(data=>{
-       Object.entries(data).forEach(states=>{
-        let regex=new RegExp(`^${input.value}`)
+   const val= Object.values(data)
+   const regex=new RegExp("^/w{5}$")
+      val.forEach((value)=>{
+         const propvalue=Object.values(value)
+        if (propvalue.includes("Alabama")) {
+           console.log(propvalue);
+        } else {
+           return""
+        }
+        
+      })
+      
        
-        let befilter=states.slice(1)[0]
-        console.log(befilter.name);
-       if () {
-           console.log(befilter.name);
-       }
+       
 
         // console.log();
         // if (befilter.name) {
@@ -34,4 +40,4 @@ input.addEventListener("input",()=>{
            })
            
        })
-    })
+    
