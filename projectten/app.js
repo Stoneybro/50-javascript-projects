@@ -4,30 +4,31 @@ const question=document.querySelector(".question")
 const equals=document.querySelector("#equals")
 const deleteno=document.querySelector("#delete")
 const clear=document.querySelector("#clear")
+const molo=document.querySelector("#molo")
 keys.forEach((key,index)=>{
  
     question.textContent;
+    let saved=[]
+
     key.addEventListener("click",(e)=>{
       
-        let x=e.currentTarget
-        for (let i = 0; i < numbers.length; i++) {
             key= numbers[index];
-        }
-        question.textContent+=key
-       
+    question.textContent+=key
     })
+
     clear.addEventListener("click",()=>{
          question.textContent=""
-       
      })
-     deleteno.addEventListener("click",deletenos
-     
-     )
-
+     deleteno.addEventListener("click",deletenos )
+     let y;
    equals.addEventListener("click",()=>{
       question.textContent= eval(question.textContent)
+      saved.push(question.textContent)
+      molo.textContent=saved
+      localStorage()
    })
-    
+
+   
 })
 
 function deletenos(params) {
